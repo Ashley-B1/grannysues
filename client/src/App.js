@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Hero from "./components/Hero";
 import Products from "./components/Products";
 import Feature from './components/Feature';
+import Footer from './components/Footer';
 
 import { dinnerData, dessertData } from './components/Products/data';
 
@@ -15,6 +16,7 @@ function App() {
           <Products heading='Order Dinner' data={dinnerData} />
           <Feature />
           <Products heading='Sweet Tooth?' data={dessertData} />
+          <Footer />
         </Route>
       </Switch>
     </Router>

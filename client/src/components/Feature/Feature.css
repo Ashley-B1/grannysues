@@ -1,8 +1,24 @@
-.feature-container {
-  border: solid red 2px;
-  height: 100vh;
-  max-height: 500px;
-  /* background-position: center ;
-  background-size: cover; */
-  padding: 0 1rem;
+.feature-heading {
+  font-size: clamp(3rem, 5vw, 5rem);
+  margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.lto-button {
+  font-size: 1.4rem;
+  padding: 0.6rem 3rem;
+  border: none;
+  background-color: #F78F6A;
+  transition: 0.2s ease-out;
+}
+
+.lto-button:hover {
+  color: #fff;
+  background-color: #C2655D;
+  transition: 0.2s ease-out;
+  cursor: pointer;
 }

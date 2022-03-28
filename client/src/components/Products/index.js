@@ -1,14 +1,13 @@
 import React from 'react'
 
 import './Products.css'
-import { dinnerData } from './data'
 
-const Products = () => {
+const Products = ({ heading, data }) => {
   return (
     <div className='products-container'>
-      <h1 className='products-heading'>Order Dinner</h1>
+      <h1 className='products-heading'>{heading}</h1>
       <div className='product-wrapper'>
-        {dinnerData.map((product, i) => (
+        {data.map((product, i) => (
           <div className='product-card' key={i}>
             <img className='product-img' src={product.image} alt={product.name} />
             <div className='product-info'>

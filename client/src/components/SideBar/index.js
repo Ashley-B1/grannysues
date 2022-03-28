@@ -13,12 +13,12 @@ const SideBar = ({ isOpen, toggle }) => {
       </div>
       <div className='sidebar-menu'>
         <Link className='sb-link' to='/'>Home</Link>
-        <Link className='sb-link' to='/'>About</Link>
-        <Link className='sb-link' to='/'>Contact</Link>
-        <Link className='sb-link' to='/'>Menu</Link>
+        <Link className='sb-link' to='*'>About</Link>
+        <Link className='sb-link' to='*'>Contact</Link>
+        <Link className='sb-link' to='*'>Menu</Link>
       </div>
       <div className='side-btn-wrap'>
-        <Link to='/' className='side-route'>Order Now!</Link>
+        <Link to='*' className='side-route'>Order Now!</Link>
       </div>
     </SideBarContainer>
   )

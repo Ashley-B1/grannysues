@@ -1,0 +1,42 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  font-family: 'Play', sans-serif;
+}
+
+.nf-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nf-card h1 {
+  margin-bottom: 1rem;;
+}
+
+.nf-card h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.nf-card img {
+  width: 400px;
+  margin-bottom: 1.2rem;
+}
+
+.nf-card p {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.nf-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.nf-link:hover {
+  color: #CA6AF7
+}

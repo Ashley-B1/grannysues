@@ -6,6 +6,7 @@ import Feature from './components/Feature';
 import Footer from './components/Footer';
 
 import { dinnerData, dessertData } from './components/Products/data';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <Feature />
           <Products heading='Sweet Tooth?' data={dessertData} />
           <Footer />
+        </Route>
+        <Route path='*'>
+          <NotFound />
         </Route>
       </Switch>
     </Router>

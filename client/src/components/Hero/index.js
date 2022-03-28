@@ -1,13 +1,20 @@
 import './Hero.css';
-import React from 'react'
+import React, { useState } from 'react'
 
-import heroBg from '../../images/hero-bg.jpeg'
+import heroBg from '../../images/hero-bg2.jpeg'
 import NavBar from '../NavBar';
+import SideBar from '../SideBar';
 
 const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className='hero' style={{background: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(${heroBg})`}}>
-      <NavBar />
+      <NavBar toggle={toggle} />
+      <SideBar toggle={toggle} isOpen={isOpen} />
       <div className='hero-content'>
         <div className='hero-items'>
           <h1 className='hero-title'>Best Soul Food in Dallas!</h1>

@@ -1,5 +1,7 @@
-import Hero from "./components/Hero";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Hero from "./components/Hero";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Hero />
+          <Products />
         </Route>
       </Switch>
     </Router>

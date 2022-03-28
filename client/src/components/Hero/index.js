@@ -12,7 +12,7 @@ const Hero = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className='hero' style={{background: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(${heroBg})`}}>
+    <div className='hero' style={{background: `linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(${heroBg})`}}>
       <NavBar toggle={toggle} />
       <SideBar toggle={toggle} isOpen={isOpen} />
       <div className='hero-content'>

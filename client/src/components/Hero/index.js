@@ -2,10 +2,12 @@ import './Hero.css';
 import React from 'react'
 
 import heroBg from '../../images/hero-bg.jpeg'
+import NavBar from '../NavBar';
 
 const Hero = () => {
   return (
     <div className='hero' style={{background: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(${heroBg})`}}>
+      <NavBar />
       <div className='hero-content'>
         <div className='hero-items'>
           <h1 className='hero-title'>Best Soul Food in Dallas!</h1>

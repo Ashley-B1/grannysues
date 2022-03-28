@@ -1,10 +1,15 @@
 import Hero from "./components/Hero";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Hero />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

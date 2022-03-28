@@ -1,0 +1,8 @@
+.feature-container {
+  border: solid red 2px;
+  height: 100vh;
+  max-height: 500px;
+  /* background-position: center ;
+  background-size: cover; */
+  padding: 0 1rem;
+}
